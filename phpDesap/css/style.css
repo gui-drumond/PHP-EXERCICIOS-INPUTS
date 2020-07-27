@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'poppins', sans-serif;
+  color: #222;
+}
+
+hr{
+    border-top: 1px solid rgb(206, 206, 206);
+}
+
+.navbar{
+  padding: .8rem;
+  text-transform: uppercase;
+}
+
+.navbar-brand img{
+  height: 4rem;
+}
+
+.navbar-nav li{
+  padding-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.nav-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: white;
+  display: block;
+  transition: .5s;
+}
+
+.nav-link:hover::after{
+  width: 100%;
+}
+
+.nav-link{
+  font-size: 1.1em !important;
+}
+
+.home-inner{
+  background-image: url(../img/bg1.jpg);
+}
+
+.caption{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.caption h1{
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+/* credits: https://www.youtube.com/watch?v=V_lAhqLXT9A&t=2539s */
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
